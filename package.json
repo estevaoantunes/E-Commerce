@@ -1,0 +1,30 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "express",
+    "express-handlebars",
+    "bootstrap",
+    "mysql"
+  ],
+  "homepage": "https://github.com/estevaoantunes/E-Commerce#readme",
+  "bugs": {
+    "url": "https://github.com/estevaoantunes/E-Commerce/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevaoantunes/E-Commerce.git"
+  },
+  "license": "ISC",
+  "author": "Estevão Antunes Lessa de Sousa Oliveira",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}
