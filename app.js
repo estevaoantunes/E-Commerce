@@ -1,10 +1,19 @@
 // Importar módulo express
 const express = require('express');
 
+// Importar módulo express-handlebars
+const {engine} = require('express-handlebars');
+
 // Importar módulo mysql
 const mysql = require('mysql2')
+
 // App
 const app = express();
+
+//Configuração do express-handlebars
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+app.set('views', './views');
 
 // Configuração de conexão
 
@@ -22,10 +31,9 @@ conexao.connect(function(erro){
 });
 
 
-// Rota Hello World
+// Rota principal
 app.get('/', function(req, res){
-    res.write('Uilizando o Nodemon');
-    res.end();
+   res.render('formulario');
 });
 
 // Servidor
